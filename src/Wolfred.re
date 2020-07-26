@@ -10,7 +10,7 @@ let desktopFiles =
   |> Array.map(~f=fileName =>
        Shared.Item.make(
          ~name=fileName,
-         ~iconAsset=FileExtension.fromPath(fileName),
+         ~fileExtension=FileExtension.fromPath(fileName),
        )
      )
   |> Array.toList;

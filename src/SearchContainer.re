@@ -115,7 +115,11 @@ let%component make = (~window: Window.t, ~items, ()) => {
     Hooks.effect(
       OnMountAndIf((!=), state.containerHeight),
       () => {
-        window |> Window.setSize(~height=state.containerHeight, ~width=Shared.Constants.containerWidth);
+        window
+        |> Window.setSize(
+             ~height=state.containerHeight,
+             ~width=Shared.Constants.containerWidth,
+           );
 
         None;
       },

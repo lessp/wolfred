@@ -1,7 +1,5 @@
-open Revery.UI;
-
-let fromFileExtension = fileExtension => {
-  let iconPath =
+module Asset = {
+  let fromFileExtension = fileExtension => {
     switch (fileExtension) {
     | ".jpg" => "jpg.png"
     | ".mov" => "mov.png"
@@ -11,11 +9,5 @@ let fromFileExtension = fileExtension => {
     | ".zip" => "zip.png"
     | _ => "zip.png"
     };
-
-  <Image
-    src={`File(iconPath)}
-    height=24
-    width=24
-    style=Style.[marginRight(12)]
-  />;
+  };
 };

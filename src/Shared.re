@@ -1,10 +1,10 @@
 module Item = {
   type t = {
     name: string,
-    iconAsset: string,
+    fileExtension: string,
   };
 
-  let make = (~iconAsset, ~name) => {name, iconAsset};
+  let make = (~fileExtension, ~name) => {name, fileExtension};
 };
 
 module Constants = {

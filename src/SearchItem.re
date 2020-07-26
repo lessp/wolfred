@@ -20,6 +20,11 @@ let make = (~active, ~item: Shared.Item.t, ()) =>
         ]
         text={item.name}
       />
-      {Icons.fromFileExtension(item.iconAsset)}
+      <Image
+        src={`File(Icons.Asset.fromFileExtension(item.fileExtension))}
+        height=24
+        width=24
+        style=Style.[marginRight(12)]
+      />
     </Row>
   </View>;
