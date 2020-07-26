@@ -99,21 +99,13 @@ let%component make = (~window: Window.t, ~items, ()) => {
           ),
         )
       | "Return" =>
-        let itemThatReturnWasPressedOn =
+        let fileThatReturnWasPressedOn =
           state.matchingItems
           |> List.getAt(~index=selectedItemIndex)
           |> Option.map(~f=({name, _}: Shared.Item.t) => name)
           |> Option.withDefault(~default="None");
 
-        Console.log("Pressed return on: " ++ itemThatReturnWasPressedOn);
-
-        Revery.Native.Notification.create(
-          ~title="Wolfred",
-          ~body="Pressed return on: " ++ itemThatReturnWasPressedOn,
-          ~onClick=() => Console.log("Notification clicked."),
-          (),
-        )
-        |> Native.Notification.dispatch;
+        Console.log("Pressed return on: " ++ fileThatReturnWasPressedOn);
       | _ => ()
       };
     };
