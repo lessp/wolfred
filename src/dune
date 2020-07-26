@@ -1,0 +1,21 @@
+(executable
+    (name Wolfred)
+    (package Wolfred)
+    (preprocess (pps brisk-reconciler.ppx))
+    (public_name Wolfred)
+    (libraries bigarray Revery Revery.lwt tablecloth-native dir.lib)
+    (flags (-open Tablecloth)))
+
+(install
+ (section bin)
+ (package Wolfred)
+ (files 
+   assets/Lato-Regular.ttf 
+   assets/Lato-Bold.ttf 
+   assets/icons/file_extensions/mov.png
+   assets/icons/file_extensions/jpg.png
+   assets/icons/file_extensions/pdf.png
+   assets/icons/file_extensions/png.png
+   assets/icons/file_extensions/txt.png
+   assets/icons/file_extensions/zip.png
+))

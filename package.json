@@ -1,0 +1,52 @@
+{
+  "name": "wolfred",
+  "version": "0.1.0",
+  "description": "An example of a modal-like app in Revery",
+  "license": "MIT",
+  "scripts": {
+    "format": "bash -c \"refmt --in-place **/*.re\"",
+    "run": "esy x Wolfred"
+  },
+  "esy": {
+    "build": "dune build -p Wolfred",
+    "buildDev": "refmterr dune build -p Wolfred",
+    "buildsInSource": "_build"
+  },
+  "revery-packager": {
+    "bundleName": "Wolfred",
+    "bundleId": "com.wolfred.app",
+    "displayName": "Wolfred",
+    "mainExecutable": "Wolfred",
+    "windows": {
+      "packages": [
+        "zip"
+      ],
+      "iconFile": "assets/icon.ico"
+    },
+    "darwin": {
+      "packages": [
+        "tar",
+        "dmg"
+      ],
+      "iconFile": "assets/icon.icns"
+    },
+    "linux": {
+      "packages": [
+        "tar",
+        "appimage"
+      ]
+    }
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/reason": "^3.6.0",
+    "@opam/tablecloth-native": "0.0.7",
+    "@reason-native/dir": "facebookexperimental/reason-native:dir.json",
+    "esy-macdylibbundler": "*",
+    "revery": "revery-ui/revery#9345a06"
+  },
+  "devDependencies": {
+    "ocaml": "~4.9.0",
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam"
+  }
+}
