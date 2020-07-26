@@ -1,5 +1,3 @@
-open Revery;
-
 module Item = {
   type t = {
     name: string,

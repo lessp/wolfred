@@ -1,5 +1,3 @@
-open Revery;
-
 let fromPath = path => {
   path
   |> Fpath.of_string
