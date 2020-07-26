@@ -46,7 +46,9 @@
     "revery": "revery-ui/revery#9345a06"
   },
   "devDependencies": {
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam",
     "ocaml": "~4.9.0",
-    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam"
+    "refmterr": "^3.3.2"
   }
 }
+
