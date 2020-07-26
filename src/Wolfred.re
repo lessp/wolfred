@@ -36,7 +36,7 @@ let init = app => {
           // Hidden only works for Mac currently, but doesn't have an effect
           // on the other platforms
           ~titlebarStyle=Hidden,
-          ~width=640,
+          ~width=Shared.Constants.containerWidth,
           ~minimumHeight=Shared.Constants.searchBarHeight,
           ~height=Shared.Constants.searchBarHeight,
           (),

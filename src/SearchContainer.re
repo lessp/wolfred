@@ -115,7 +115,7 @@ let%component make = (~window: Window.t, ~items, ()) => {
     Hooks.effect(
       OnMountAndIf((!=), state.containerHeight),
       () => {
-        window |> Window.setSize(~height=state.containerHeight, ~width=640);
+        window |> Window.setSize(~height=state.containerHeight, ~width=Shared.Constants.containerWidth);
 
         None;
       },
@@ -148,7 +148,7 @@ let%component make = (~window: Window.t, ~items, ()) => {
         height(Shared.Constants.searchBarHeight),
         backgroundColor(Color.hex(Theme.dimWhite)),
         border(~width=0, ~color=Colors.transparentWhite),
-        width(640),
+        width(Shared.Constants.containerWidth),
       ]
     />
     {hasMatchingItems
@@ -156,7 +156,7 @@ let%component make = (~window: Window.t, ~items, ()) => {
            <View
              style=Style.[
                height(1),
-               width(640),
+               width(Shared.Constants.containerWidth),
                backgroundColor(Color.hex(Theme.dimGrey)),
              ]
            />
