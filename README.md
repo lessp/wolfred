@@ -23,7 +23,7 @@ esy
 
 Once built, the application binary will be in the `_build/install/default/bin` - you can run it like:
 
-- `_build/install/default/bin/App`
+- `_build/install/default/bin/Wolfred`
 
 or using esy with the script specified in [package.json](package.json#L8):
 
