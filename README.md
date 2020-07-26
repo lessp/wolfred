@@ -35,7 +35,7 @@ To create packages for distribution, follow these steps:
 
 - `npm install -g revery-packager`
 
-From the `revery-quick-start` folder, run:
+From the project-folder, run:
 
 - `revery-packager`
 
