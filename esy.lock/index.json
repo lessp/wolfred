@@ -1,5 +1,5 @@
 {
-  "checksum": "d66ce3ab76db5fefe254281ff30fb759",
+  "checksum": "4e75a1849c8b7618197b8a6decbfd74f",
   "root": "wolfred@link-dev:./package.json",
   "node": {
     "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79@d41d8cd9": {
@@ -29,7 +29,7 @@
       },
       "overrides": [],
       "dependencies": [
-        "revery@github:revery-ui/revery#9345a06@d41d8cd9",
+        "revery@github:revery-ui/revery#1531d5feebb894830010b14dadf89e09db9b648b@d41d8cd9",
         "esy-macdylibbundler@0.4.5@d41d8cd9",
         "@reason-native/dir@github:facebookexperimental/reason-native:dir.json#a33f1528a6dd86c67f365e226c81312733181c87@d41d8cd9",
         "@opam/tablecloth-native@opam:0.0.7@cee0eae9",
@@ -40,13 +40,17 @@
         "@opam/ocaml-lsp-server@github:ocaml/ocaml-lsp:ocaml-lsp-server.opam#b017b14ac6015fdecd35b1d1b6e7e5cd6cee9600@d41d8cd9"
       ]
     },
-    "revery@github:revery-ui/revery#9345a06@d41d8cd9": {
-      "id": "revery@github:revery-ui/revery#9345a06@d41d8cd9",
+    "revery@github:revery-ui/revery#1531d5feebb894830010b14dadf89e09db9b648b@d41d8cd9": {
+      "id":
+        "revery@github:revery-ui/revery#1531d5feebb894830010b14dadf89e09db9b648b@d41d8cd9",
       "name": "revery",
-      "version": "github:revery-ui/revery#9345a06",
+      "version":
+        "github:revery-ui/revery#1531d5feebb894830010b14dadf89e09db9b648b",
       "source": {
         "type": "install",
-        "source": [ "github:revery-ui/revery#9345a06" ]
+        "source": [
+          "github:revery-ui/revery#1531d5feebb894830010b14dadf89e09db9b648b"
+        ]
       },
       "overrides": [],
       "dependencies": [
