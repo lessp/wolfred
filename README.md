@@ -4,6 +4,10 @@ An [Alfred](https://www.alfredapp.com/)-like starting point for Revery which let
 
 Currently there's no status-bar/tray-support.
 
+## Screenshot
+
+<img src="./docs/example-image.png" width="640" />
+
 ## Prerequisites
 
 See the [requirements for building Revery](https://github.com/revery-ui/revery/wiki/Building-&-Installing)
